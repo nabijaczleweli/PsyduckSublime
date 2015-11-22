@@ -3,9 +3,8 @@ import sublime
 import sublime_plugin
 
 
-PSYDUCK = ''
-
 def load_psyduck():
+	global PSYDUCK
 	if not PSYDUCK:
 		with open(os.path.dirname(os.path.realpath(__file__)) + '/psyduck', 'r') as psyduck:
 			PSYDUCK = psyduck.read()
