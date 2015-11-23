@@ -1,3 +1,4 @@
+import sublime
 import sublime_plugin
 
 PSYDUCK = '''
@@ -20,7 +21,8 @@ PSYDUCK = '''
 //         ~-.__             _/--~
 //        _.-~  ~~~-----~~~~~
 //       ~-.-. _-~     /_ ._ \
-//            ~       ~  ~  ~-'''
+//            ~       ~  ~  ~-
+'''
 
 class PsyduckCommand(sublime_plugin.TextCommand):
 	def run(self, view, **kwargs):
