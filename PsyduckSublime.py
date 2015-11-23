@@ -1,7 +1,6 @@
 import sublime_plugin
 
-PSYDUCK =
-'''
+PSYDUCK = '''
 //                    // //  //
 //         __    ____||_//  //
 //       _/__--~~        ~~~-_
@@ -21,8 +20,7 @@ PSYDUCK =
 //         ~-.__             _/--~
 //        _.-~  ~~~-----~~~~~
 //       ~-.-. _-~     /_ ._ \
-//            ~       ~  ~  ~-
-'''
+//            ~       ~  ~  ~-'''
 
 class RandomIntCommand(sublime_plugin.TextCommand):
 	def insert(self, view, generator):
