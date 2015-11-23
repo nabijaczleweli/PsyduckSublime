@@ -23,10 +23,7 @@ PSYDUCK = '''
 //            ~       ~  ~  ~-'''
 
 class RandomIntCommand(sublime_plugin.TextCommand):
-	def insert(self, view, generator):
-
 	def run(self, view, **kwargs):
 		sels = self.view.sel()
-
 		for region in sels:
 			self.view.insert(view, region.begin(), PSYDUCK)
