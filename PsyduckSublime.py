@@ -22,7 +22,7 @@ PSYDUCK = '''
 //       ~-.-. _-~     /_ ._ \
 //            ~       ~  ~  ~-'''
 
-class RandomIntCommand(sublime_plugin.TextCommand):
+class PsyduckCommand(sublime_plugin.TextCommand):
 	def run(self, view, **kwargs):
 		sels = self.view.sel()
 		for region in sels:
