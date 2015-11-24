@@ -3,6 +3,8 @@ import sublime
 import sublime_plugin
 
 
+PSYDUCK = ''
+
 def load_psyduck():
 	global PSYDUCK
 	if not PSYDUCK:
